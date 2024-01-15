@@ -1,0 +1,283 @@
+.body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.border_game,
+.border_news,
+.border_skill_tree,
+.border_enemy,
+.border_video {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  background-image: url("../assets/img/image/Border.png");
+  background-size: var(--border-);
+  background-repeat: no-repeat;
+  background-position: right;
+  transform: rotateY(180deg);
+  margin-bottom: -3.7%;
+  z-index: 50;
+}
+
+.border_news {
+  transform: rotateY(0deg) !important;
+  margin: -3.5% 0% 0% 0% !important;
+}
+
+.border_skill_tree,
+.border_video {
+  transform: rotateY(0deg) !important;
+}
+
+.border_enemy,
+.border_video {
+  margin-top: -3.3%;
+}
+
+.content_news {
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content_news h2 {
+  position: relative;
+  margin: 2rem 0rem 1rem 0rem;
+  z-index: 5;
+}
+
+.content2_news {
+  position: relative;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.content2_news img {
+  position: absolute;
+  width: 100vw;
+  top: -29.7%;
+  left: 0%;
+  opacity: 0.05;
+}
+
+.content2_news p {
+  position: relative;
+  margin-top: 0rem !important;
+  z-index: 5;
+}
+
+.content_game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+.sidebar_game {
+  position: relative;
+  height: 4rem;
+  margin-bottom: -0.9rem;
+  text-align: center;
+}
+
+.sidebar_game h2 {
+  position: relative;
+  margin: 1rem;
+  z-index: 5;
+  margin-left: 17rem;
+  color: var(--white);
+}
+
+.content2_game {
+  position: relative;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.content2_game img {
+  position: relative;
+  width: 27rem;
+  z-index: 5;
+}
+
+.img3 {
+  position: absolute !important;
+  top: -13.7%;
+  left: 0%;
+  width: 100vw !important;
+  opacity: 1 !important;
+  z-index: 0 !important;
+}
+
+.content_game_text {
+  position: relative;
+  left: 25%;
+  width: 75%;
+  margin: 0rem 1rem !important;
+}
+
+.content2_game p {
+  position: relative;
+  z-index: 5;
+}
+
+.content_skill_three,
+.content_enemy {
+  position: relative;
+  display: flex;
+  z-index: 7;
+  background-color: var(--gray-800);
+}
+
+.content_enemy {
+  background-color: var(--gray-700) !important;
+}
+
+.content_skill_three_text,
+.content_enemy_text,
+.content_game_text,
+.content_video_text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem 2rem;
+  z-index: 5;
+}
+
+.content_skill_three img,
+.content_enemy img {
+  width: 58%;
+}
+
+.content_video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 7;
+  background-color: var(--gray-800);
+}
+
+.content_video iframe {
+  position: relative;
+  width: 50%;
+  margin-bottom: 3rem;
+  z-index: 5;
+}
+
+.border_img_BG {
+  position: absolute;
+  opacity: 0.1;
+  z-index: 1;
+  top: 1rem;
+}
+
+.button_buy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-800);
+  padding-bottom: 2rem;
+}
+
+.button_buy button {
+  width: 13rem;
+  height: 3rem;
+  font-size: 0.9rem;
+}
+
+.rede {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--gray-800);
+}
+
+.rede h2 {
+  color: var(--gold-100);
+}
+
+.rede_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.rede button {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.rede button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .border_game,
+  .border_news,
+  .border_skill_tree,
+  .border_enemy,
+  .border_video {
+    height: 3rem;
+  }
+
+  .content_game,
+  .content_skill_three,
+  .content_enemy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content_skill_three img,
+  .content_enemy img {
+    width: 70%;
+  }
+
+  .content_skill_three_text {
+    margin: 3rem 2rem 0rem 2rem;
+  }
+
+  .content_enemy_text,
+  .content_game_text,
+  .content_video_text {
+    margin: 0rem 2rem 3rem 2rem;
+  }
+
+  .content2_game {
+    align-items: center;
+  }
+
+  .content_game_text {
+    width: 100%;
+    left: 0%;
+  }
+
+  .img3 {
+    opacity: 0.3 !important;
+  }
+
+  .content_video_text h2 {
+    margin-top: 10% !important;
+  }
+
+  .button_buy {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,44 @@
+.sidebar_soon {
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    background-color: var(--gray-900);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_base {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lang_base {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 40%;
+}
+.lang {
+    width: 30%;
+    display: flex;
+    text-align: end;
+}
+
+.lang img {
+    width: 70%;
+    margin: 0% 1%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+    .lang {
+        margin: 0 1rem;
+    }
+    .lang img {
+        width: 1.5rem;
+    }
+}
