@@ -1,4 +1,4 @@
-import styles from "./footer.module.css"
+import styles from "./Footer.module.css"
 import img from "../assets/img/logos/Magus Pocus No BG.png"
 
 export const Footer_Br = () => {
