@@ -13,15 +13,17 @@
     justify-content: flex-end;
 }
 
+.logo {
+    width: 40%;
+    margin: 2% 1%;
+}
+
 .lang_base {
     width: 30%;
     display: flex;
     justify-content: flex-end;
 }
 
-.logo {
-    width: 40%;
-}
 .lang {
     width: 30%;
     display: flex;
@@ -34,11 +36,25 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 380px) {
-    .lang {
-        margin: 0 1rem;
+@media screen and (max-width: 540px) {
+    .logo_base {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
     }
-    .lang img {
-        width: 1.5rem;
+
+    .logo {
+        width: 60%;
+        margin: 2% 1%;
+    }
+    
+    .lang_base {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .lang {
+        width: 80%;
     }
 }
