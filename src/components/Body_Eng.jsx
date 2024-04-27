@@ -82,7 +82,7 @@ export const Body_Eng = () => {
                 </a>
             </div>
             <div className={styles.rede}>
-                <h2>Follow Magus Pocus</h2>
+                <h3>Follow Magus Pocus</h3>
                 <div className={styles.rede_icons}>
                     <a href="https://www.facebook.com/maguspocusgame/">
                         <button>

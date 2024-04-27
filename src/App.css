@@ -60,7 +60,7 @@ body{
     background-color: var(--gray-900);
   }
   
-  h1 , h2{
+  h1 , h2, h3{
     color: var(--gold-100);
     font-size: 1.9rem;
     font-weight: bold;

@@ -94,7 +94,7 @@ export const Body_Br = () => {
                 </a>
             </div>
             <div className={styles.rede}>
-                <h2>Siga Magus Pocus</h2>
+                <h3>Siga Magus Pocus</h3>
                 <div className={styles.rede_icons}>
                     <a href="https://www.facebook.com/maguspocusgame/">
                         <button>

@@ -1,19 +1,16 @@
 import styles from "./Body.module.css";
-import imgNews from "../assets/img/image/about-image.webp"
-import img from "../assets/img/image/1.webp"
-import img3 from "../assets/img/image/5.webp"
-import img4 from "../assets/img/image/3.png"
-import img5 from "../assets/img/image/4.png"
-import img6 from "../assets/img/image/5.png"
-import fb from "../assets/img/icons/icon face.png"
-import ins from "../assets/img/icons/icone insta.png"
-import you from "../assets/img/icons/icon youtube.png"
+import imgNews from "../assets/img/image/about-image.webp";
+import img from "../assets/img/image/1.webp";
+import img3 from "../assets/img/image/5.webp";
+import fb from "../assets/img/icons/icon face.png";
+import ins from "../assets/img/icons/icone insta.png";
+import you from "../assets/img/icons/icon youtube.png";
 
 export const MainPage_Eng = () => {
 
     const urlGame = {
         maguspocus: "/maguspocus",
-    }
+    };
 
     return (
         <body className={styles.body}>
@@ -31,11 +28,11 @@ export const MainPage_Eng = () => {
                         </p>
                     </div>
                     <div>
-                        <img src={img} />
+                        <img src={img} title="background" alt="Mountains with stormy weather in the background" />
                     </div>
                 </div>
                 <div>
-                    <img className={styles.imgNews} src={imgNews} />
+                    <img className={styles.imgNews} src={imgNews} title="Storm Wizard Studios - News Image" alt="News Image" />
                 </div>
             </div>
             <div className={styles.border_game_main_page}></div>
@@ -55,26 +52,26 @@ export const MainPage_Eng = () => {
                         </button>
                     </div>
                     <div>
-                        <img src={img3} className={styles.img3} />
+                        <img src={img3} className={styles.img3} title="Magus Pocus Game" alt="Magus Pocus Game" />
                     </div>
                 </div>
             </div>
             <div className={styles.rede_main_page}>
-                <h2>Follow Storm Wizard Studios</h2>
+                <h3>Follow Storm Wizard Studios</h3>
                 <div className={styles.rede_icons}>
                     <a href="https://www.facebook.com/maguspocusgame/">
                         <button>
-                            <img id="social-media" src={fb} />
+                            <img id="social-media" src={fb} title="Facebook" alt="Facebook" />
                         </button>
                     </a>
                     <a href="https://www.instagram.com/stormwizardstudios/">
                         <button>
-                            <img id="social-media" src={ins} />
+                            <img id="social-media" src={ins} title="Instagram" alt="Instagram" />
                         </button>
                     </a>
                     <a href="https://www.youtube.com/channel/UCpKBagVTJbt9DWc97_JqQZA">
                         <button>
-                            <img id="social-media" src={you} />
+                            <img id="social-media" src={you} title="YouTube" alt="YouTube" />
                         </button>
                     </a>
                 </div>
