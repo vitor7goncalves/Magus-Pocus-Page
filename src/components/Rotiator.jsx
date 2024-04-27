@@ -1,12 +1,14 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Sidebar } from "../components/Sidebar";
+import { Topbar } from "../components/Topbar";
+import { MainTopbar } from "./MainTopbar";
 
 export const Rotiator = () => {
     return (
         <Routes>
-            <Route path="/" element={<Navigate to="/maguspocus" />} />
-            <Route path="/maguspocus" element={<Sidebar />} />
+            <Route path="/" element={<MainTopbar />} />
+            <Route path="/maguspocus" element={<Topbar />} />
         </Routes>
     )
 }
 
+//<Route path="/" element={<Navigate to="/maguspocus" />} />

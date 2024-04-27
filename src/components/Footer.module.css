@@ -5,11 +5,29 @@
     background-color: var(--gray-900);
 }
 
+.footer_main_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-900);
+}
+
 .footer img{
     width: 10rem;
     margin: 2rem;
+    cursor: pointer;
+}
+
+.footer_main_page img{
+    width: 17rem;
+    margin: 2rem;
+    cursor: pointer;
 }
 
 .footer p{
+    margin: .5rem 0;
+}
+
+.footer_main_page p{
     margin: .5rem 0;
 }

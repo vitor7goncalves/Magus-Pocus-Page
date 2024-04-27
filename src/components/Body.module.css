@@ -9,7 +9,9 @@
 .border_news,
 .border_skill_tree,
 .border_enemy,
-.border_video {
+.border_video,
+.border_news_main_page,
+.border_game_main_page {
   position: relative;
   width: 100%;
   height: 6rem;
@@ -20,6 +22,16 @@
   transform: rotateY(180deg);
   margin-bottom: -3.7%;
   z-index: 50;
+}
+
+.border_game_main_page {
+   margin-top: 3rem;
+   transform: rotateY(0deg) !important;
+}
+
+.border_news_main_page {
+  background-color: rgba(0, 0, 0, 0);
+  margin: -4.5rem 0rem 2rem 0rem;
 }
 
 .border_news {
@@ -45,6 +57,14 @@
   justify-content: center;
 }
 
+.content_news_main_page {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .content_news h2 {
   position: relative;
   margin: 2rem 0rem 1rem 0rem;
@@ -58,12 +78,33 @@
   align-items: center;
 }
 
+.content2_news_main_page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+}
+
 .content2_news img {
   position: absolute;
   width: 100vw;
   top: -29.7%;
   left: 0%;
   opacity: 0.05;
+}
+
+.content2_news_main_page img {
+  position: absolute;
+  width: 100vw;
+  top: -29.7%;
+  left: 0%;
+  opacity: 0.25;
+}
+
+.imgNews {
+  position: relative !important;
+  width: 85% !important;
 }
 
 .content2_news p {
@@ -80,14 +121,14 @@
   padding: 3rem 0rem;
 }
 
-.sidebar_game {
+.topbar_game {
   position: relative;
   height: 4rem;
   margin-bottom: -0.9rem;
   text-align: center;
 }
 
-.sidebar_game h2 {
+.topbar_game h2 {
   position: relative;
   margin: 1rem;
   z-index: 5;
@@ -124,6 +165,14 @@
   margin: 0rem 1rem !important;
 }
 
+.content_game_text_main_page {
+  position: relative;
+  left: 25%;
+  width: 75%;
+  align-items: center;
+  margin: 0rem 1rem !important;
+}
+
 .content2_game p {
   position: relative;
   z-index: 5;
@@ -144,6 +193,7 @@
 .content_skill_three_text,
 .content_enemy_text,
 .content_game_text,
+.content_game_text_main_page,
 .content_video_text {
   position: relative;
   display: flex;
@@ -205,7 +255,20 @@
   background-color: var(--gray-800);
 }
 
+.rede_main_page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--gray-900);
+}
+
 .rede h2 {
+  color: var(--gold-100);
+}
+
+.rede_main_page h2 {
   color: var(--gold-100);
 }
 
@@ -222,7 +285,20 @@
   border-radius: 10px;
 }
 
+.rede_main_page button {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
 .rede button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.rede_main_page button img {
   width: 2rem;
   height: 2rem;
 }
@@ -233,51 +309,72 @@
   .border_news,
   .border_skill_tree,
   .border_enemy,
-  .border_video {
-    height: 3rem;
+  .border_video,
+  .border_news_main_page {
+      height: 3rem;
+  }
+
+  .border_news_main_page {
+    margin: -2.5rem 0rem 2rem 0rem;
   }
 
   .content_game,
   .content_skill_three,
   .content_enemy {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
 
   .content_skill_three img,
   .content_enemy img {
-    width: 70%;
+      width: 70%;
   }
 
   .content_skill_three_text {
-    margin: 3rem 2rem 0rem 2rem;
+      margin: 3rem 2rem 0rem 2rem;
   }
 
   .content_enemy_text,
   .content_game_text,
+  .content_game_text_main_page,
   .content_video_text {
-    margin: 0rem 2rem 3rem 2rem;
+      margin: 0rem 2rem 3rem 2rem;
   }
 
   .content2_game {
-    align-items: center;
+      align-items: center;
   }
 
   .content_game_text {
-    width: 100%;
-    left: 0%;
+      width: 100%;
+      left: 0%;
+  }
+
+  .content_game_text_main_page {
+      width: 100%;
+      left: 0%;
   }
 
   .img3 {
-    opacity: 0.3 !important;
+      opacity: 0.3 !important;
   }
 
   .content_video_text h2 {
-    margin-top: 10% !important;
+      margin-top: 10% !important;
   }
 
   .button_buy {
-    flex-direction: column;
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .imgNews {
+      display: none;
+  }
+
+  .border_news_main_page {
+    margin: -1.5rem 0rem 2rem 0rem;
   }
 }

@@ -1,11 +1,11 @@
 import './App.css'
-import { Sidebar } from './components/Sidebar.jsx'
+import { Topbar }  from './components/Topbar.jsx'
 
 function App() {
 
   return (
     <>
-      <Sidebar />
+      <Topbar />
     </>
   )
 };
