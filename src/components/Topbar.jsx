@@ -13,6 +13,23 @@ import { Footer_Br } from './Footer_Br.jsx'
 export const Topbar = () => {
     
     const [lang, setLang] = useState(localStorage.getItem('saveLang') || "eng");
+    useEffect(() => {
+        const userLang = navigator.language || navigator.userLanguage;
+        const storageLang = localStorage.getItem('saveLang');
+        if (!storageLang) {
+            if (userLang.startsWith("pt")) {
+                setLang("pt-br");
+                localStorage.setItem('saveLang', "pt-br");
+                window.history.pushState({}, document.title, "/maguspocus/pt-br/");
+            } else {
+                setLang("eng");
+                localStorage.setItem('saveLang', "eng");
+                window.history.pushState({}, document.title, "/maguspocus/eng/");
+            }
+        } else {
+            window.history.pushState({}, document.title, "/maguspocus/" + lang + "/");
+        }
+    }, []);
 
     const modifyLangForEng = () => {
         setLang("eng"); 
@@ -25,14 +42,6 @@ export const Topbar = () => {
         window.history.pushState({}, document.title, "/maguspocus/pt-br/");
         localStorage.setItem('saveLang', "pt-br");
     }
-
-    useEffect(() => {
-        if (lang === "eng") {
-            window.history.pushState({}, document.title, "/maguspocus/eng/");
-        } else {
-            window.history.pushState({}, document.title, "/maguspocus/pt-br/");
-        }
-    }, []);
 
     return (
         <aside className={styles.topbar}>

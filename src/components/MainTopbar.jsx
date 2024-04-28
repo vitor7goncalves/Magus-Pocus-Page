@@ -13,25 +13,35 @@ import { MainFooter_Br } from './MainFooter_Br.jsx'
 export const MainTopbar = () => {
     const [lang, setLang] = useState(localStorage.getItem('saveLang') || "eng");
 
+    useEffect(() => {
+        const userLang = navigator.language || navigator.userLanguage;
+        const storageLang = localStorage.getItem('saveLang');
+        if (!storageLang) {
+            if (userLang.startsWith("pt")) {
+                setLang("pt-br");
+                localStorage.setItem('saveLang', "pt-br");
+                window.history.pushState({}, document.title, "/pt-br/");
+            } else {
+                setLang("eng");
+                localStorage.setItem('saveLang', "eng");
+                window.history.pushState({}, document.title, "/eng/");
+            }
+        } else {
+            window.history.pushState({}, document.title, "/" + lang + "/");
+        }
+    }, []);
+
     const modifyLangForEng = () => {
         setLang("eng");
-        window.history.pushState({}, document.title, "/eng/");
         localStorage.setItem('saveLang', "eng");
+        window.history.pushState({}, document.title, "/eng/");
     }
 
     const modifyLangForPtBr = () => {
         setLang("pt-br");
-        window.history.pushState({}, document.title, "/pt-br/");
         localStorage.setItem('saveLang', "pt-br");
+        window.history.pushState({}, document.title, "/pt-br/");
     }
-
-    useEffect(() => {
-        if (lang === "eng") {
-            window.history.pushState({}, document.title, "/eng/");
-        } else {
-            window.history.pushState({}, document.title, "/pt-br/");
-        }
-    }, []);
 
     return (
         <aside className={styles.topbar}>
@@ -43,8 +53,8 @@ export const MainTopbar = () => {
                 </div>
                 <div className={styles.lang_base}>
                     <div className={styles.lang}>
-                        <a onClick={() => modifyLangForPtBr()}><img src={br} /></a>
-                        <a onClick={() => modifyLangForEng()}><img src={eua} /></a>
+                        <a onClick={modifyLangForPtBr}><img src={br} /></a>
+                        <a onClick={modifyLangForEng}><img src={eua} /></a>
                     </div>
                 </div>
             </div>
