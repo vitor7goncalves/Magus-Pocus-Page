@@ -6,7 +6,11 @@ export const Rotiator = () => {
     return (
         <Routes>
             <Route path="/" element={<MainTopbar />} />
+            <Route path="/eng/" element={<MainTopbar />} />
+            <Route path="/pt-br/" element={<MainTopbar />} />
             <Route path="/maguspocus" element={<Topbar />} />
+            <Route path="/maguspocus/pt-br/" element={<Topbar />} />
+            <Route path="/maguspocus/eng/" element={<Topbar />} />
         </Routes>
     )
 }
