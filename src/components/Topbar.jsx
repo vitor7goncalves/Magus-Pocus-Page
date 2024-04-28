@@ -27,7 +27,7 @@ export const Topbar = () => {
                 window.history.pushState({}, document.title, "/maguspocus/eng/");
             }
         } else {
-            window.history.pushState({}, document.title, "/maguspocus/" + lang + "/");
+            window.history.pushState({}, document.title, "/maguspocus/" + storageLang + "/");
         }
     }, []);
 

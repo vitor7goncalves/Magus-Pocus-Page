@@ -27,7 +27,7 @@ export const MainTopbar = () => {
                 window.history.pushState({}, document.title, "/eng/");
             }
         } else {
-            window.history.pushState({}, document.title, "/" + lang + "/");
+            window.history.pushState({}, document.title, "/" + storageLang + "/");
         }
     }, []);
 
