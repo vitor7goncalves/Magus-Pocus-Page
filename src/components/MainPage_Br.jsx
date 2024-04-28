@@ -6,7 +6,7 @@ import fb from "../assets/img/icons/icon face.png";
 import ins from "../assets/img/icons/icone insta.png";
 import you from "../assets/img/icons/icon youtube.png";
 
-export const MainPage_Eng = () => {
+export const MainPage_Br = () => {
 
     const urlGame = {
         maguspocus: "/maguspocus",
@@ -17,14 +17,14 @@ export const MainPage_Eng = () => {
             <div className={styles.content_news_main_page}>
                 <div className={styles.border_news_main_page}></div>
                 <div className={styles.content2_news_main_page}>
-                    <h2>Forging new realities</h2>
+                    <h2>Forjando novas realidades</h2>
                     <div>
                         <p>
-                            "Storm Wizard Studios is a visionary game development company that transcends traditional boundaries,
-                            crafting immersive gaming experiences that transport players into epic dimensions. Like masterful wizards
-                            wielding spells of creativity, we conjure vibrant worlds filled with adventure, magic, and endless possibilities.
-                            Our mission is to unleash the imagination, forging new realities with every game we create. Welcome to the realm
-                            of Storm Wizard Studios, where fantasy becomes reality."
+                            "A Storm Wizard Studios é uma empresa visionária de desenvolvimento de jogos que transcende as fronteiras tradicionais,
+                            criando experiências de jogo envolventes que transportam os jogadores para dimensões épicas. Como magos magistrais
+                            exercendo feitiços de criatividade, evocamos mundos vibrantes cheios de aventura, magia e possibilidades infinitas.
+                            Nossa missão é libertar a imaginação, forjando novas realidades com cada jogo que criamos. Bem-vindo ao reino
+                            do Storm Wizard Studios, onde a fantasia se torna realidade."
                         </p>
                     </div>
                     <div>
@@ -41,14 +41,14 @@ export const MainPage_Eng = () => {
                     <div className={styles.content_game_text_main_page}>
                         <h2>Magus Pocus</h2>
                         <p>
-                            Explore a 2D action RPG world in platformer style. Become a powerful wizard from an
-                            alternate Earth, defeat monsters, explore secret-filled stages, and enhance your magical
-                            abilities. The new DLC will transform the experience, offering an engaging journey with magical
-                            essences vital to unlocking your character's full potential. Get ready for a new era of magic!
-                            Join us on this adventure, download the demo version, and check out the changes.
+                            Explore um mundo de RPG de ação 2D no estilo plataforma. Torne-se um mago poderoso de uma
+                            Terra alternativa e derrote monstros, explore estágios cheios de segredos e aprimore seu poder mágico
+                            habilidades. O novo DLC transformará a experiência, oferecendo uma jornada envolvente com magia
+                            essências vitais para desbloquear todo o potencial do seu personagem. Prepare-se para uma nova era de magia!
+                            Junte-se a nós nesta aventura, baixe a versão demo e confira as mudanças.
                         </p>
                         <button onClick={() => window.location.href = urlGame.maguspocus}>
-                            Learn more
+                            Saiba Mais
                         </button>
                     </div>
                     <div>
@@ -57,7 +57,7 @@ export const MainPage_Eng = () => {
                 </div>
             </div>
             <div className={styles.rede_main_page}>
-                <h3>Follow Storm Wizard Studios</h3>
+                <h3>Siga Storm Wizard Studios</h3>
                 <div className={styles.rede_icons}>
                     <a href="https://www.facebook.com/maguspocusgame/">
                         <button>

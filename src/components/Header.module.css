@@ -6,6 +6,14 @@
     justify-content: center;
 }
 
+.header_main_page {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .video {
     width: 150vw;
     height: 90%;
@@ -48,11 +56,21 @@
 }
 
 @media screen and (max-width: 550px) {
+    .header_main_page {
+        margin-bottom: 3rem;
+    }
+
     .content img {
         margin-bottom: .5rem;
     }
     .content h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header_main_page {
+        margin-bottom: 4rem;
     }
 }
 

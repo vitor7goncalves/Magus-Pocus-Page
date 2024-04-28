@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from "./Topbar.module.css"
 import logo from "../assets/img/logos/StormWizard2.png"
 import br from "../assets/img/icons/br.jpg"
@@ -11,7 +11,28 @@ import { Footer_Eng } from './Footer_Eng.jsx'
 import { Footer_Br } from './Footer_Br.jsx'
 
 export const Topbar = () => {
-    const [lang, setLang] = useState("eng");
+    
+    const [lang, setLang] = useState(localStorage.getItem('saveLang') || "eng");
+
+    const modifyLangForEng = () => {
+        setLang("eng"); 
+        window.history.pushState({}, document.title, "/maguspocus/eng/");
+        localStorage.setItem('saveLang', "eng");
+    }
+
+    const modifyLangForPtBr = () => {
+        setLang("pt-br"); 
+        window.history.pushState({}, document.title, "/maguspocus/pt-br/");
+        localStorage.setItem('saveLang', "pt-br");
+    }
+
+    useEffect(() => {
+        if (lang === "eng") {
+            window.history.pushState({}, document.title, "/maguspocus/eng/");
+        } else {
+            window.history.pushState({}, document.title, "/maguspocus/pt-br/");
+        }
+    }, []);
 
     return (
         <aside className={styles.topbar}>
@@ -23,8 +44,8 @@ export const Topbar = () => {
                 </div>
                 <div className={styles.lang_base}>
                     <div className={styles.lang}>
-                        <a onClick={() => setLang("pt-br")}><img src={br} /></a>
-                        <a onClick={() => setLang("eng")}><img src={eua} /></a>
+                        <a onClick={() => modifyLangForPtBr()}><img src={br} /></a>
+                        <a onClick={() => modifyLangForEng()}><img src={eua} /></a>
                     </div>
                 </div>
             </div>
