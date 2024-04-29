@@ -68,6 +68,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .logoHeader {
+        width: 80% !important;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .header_main_page {
         margin-bottom: 4rem;

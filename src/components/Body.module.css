@@ -374,17 +374,13 @@
     text-align: center;
   }
 
-  .content2_news_main_page img {
-    top: -17%;
+  .content2_section_one_main_page {
+    padding: 0.5rem;
   }
 
   .content_skill_three img,
   .content_enemy img {
     width: 70%;
-  }
-
-  .content_skill_three_text {
-    margin: 3rem 2rem 0rem 2rem;
   }
 
   .content_enemy_text,
@@ -427,6 +423,10 @@
 
 @media screen and (max-width: 880px) {
 
+  .content2_section_one_main_page {
+    padding:5rem 0.5rem 0.5rem 0.5rem; 
+  }
+  
   .section_one_img {
     width: 330px !important;
   }
@@ -438,11 +438,20 @@
     flex-direction: column;
   }
 
+  .border_section_one_main_page {
+    top: -4rem;
+  }
+
+  .content2_section_one_main_page {
+    padding: 4rem 0.5rem 0.5rem 0.5rem; 
+    margin: 2rem 0rem;
+  }
+
   .section_one_img {
     position: absolute !important;
     width: 550px !important;
     top: -7rem;
-    left: 0rem;
+    left: 7rem;
     opacity: 0.3;
   }
 
@@ -455,12 +464,17 @@
     position: absolute !important;
     width: 550px !important;
     top: -3rem;
-    left: 0rem;
+    left: 7rem;
     opacity: 0.3;
   }
 
   .content_section_two_text_main_page {
     width: 85%;
+    margin: 3rem 0rem;
+  }
+
+  .content2_section_three_main_page {
+    margin-top: 3rem;
   }
 
   .section_three_img {
@@ -478,12 +492,26 @@
     margin: 0rem 0rem 0.5rem 0rem;
   }
 
-  .border_section_one_main_page {
-    top: -4rem;
-  }
-
   .content_section_one_main_page {
     box-shadow: var(--gray-900) 0 -60px 25px 15px;
+  }
+
+  .content2_section_one_main_page {
+    padding: 1rem 0.5rem 0.5rem 0.5rem; 
+    margin: 0rem;
+  }
+
+  .section_one_img,
+  .section_two_img {
+    left: 0rem;
+  }
+
+  .content_section_two_main_page {
+    margin-top: 5rem;
+  }
+
+  .section_two_img {
+    top: 1rem;
   }
 
   .content_game {
@@ -497,6 +525,29 @@
 
   .content2_game img{
     left: -6%;
+  }
+
+  .content_section_two_text_main_page {
+    margin: 5rem 0rem;
+  }
+
+  .content_section_three_main_page {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .content_section_two_main_page {
+    margin-top: 0rem;
+  }
+
+  .content_section_two_text_main_page {
+    margin: 1rem 0rem;
+  }
+
+  .content_section_three_main_page {
+    margin-top: -3rem;
   }
 
   .content2_section_three_main_page {
