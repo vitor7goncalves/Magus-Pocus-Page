@@ -1,6 +1,7 @@
 import styles from "./Body.module.css";
 import imgNews from "../assets/img/image/about-image.webp";
 import img from "../assets/img/image/1.webp";
+import img2 from "../assets/img/image/reinos_fantasticos.webp";
 import img3 from "../assets/img/image/5.webp";
 import fb from "../assets/img/icons/icon face.png";
 import ins from "../assets/img/icons/icone insta.png";
@@ -33,6 +34,26 @@ export const MainPage_Eng = () => {
                 </div>
                 <div>
                     <img className={styles.imgNews} src={imgNews} title="Storm Wizard Studios - News Image" alt="News Image" />
+                </div>
+            </div>
+            <div className={styles.content_game}>
+                <div className={styles.border_history_main_page}></div>
+                <div className={styles.content2_game}>
+                    <div className={styles.content_game_text_main_page}>
+                        <h2>Reinos Fantasticos</h2>
+                        <p>
+                            "In the forge of passion for games, we shape 2D and 3D worlds brimming with adventure,
+                            action, and magic. Here, at Storm Wizard Studios, we are more than developers - we are
+                            storytellers, architects of fantastical worlds where every pixel is a fragment of emotion.
+                            With mastery, we merge the charm of RPG with the adrenaline of platform games, creating
+                            experiences that challenge the imagination and uplift the hearts of players. Every game we
+                            create is an epic journey, where the player is the hero and fun is the reward. Discover
+                            the realities forged by our magic."
+                        </p>
+                    </div>
+                    <div>
+                        <img src={img2} className={styles.img2} title="Forja mágica" alt="Forja mágica" />
+                    </div>
                 </div>
             </div>
             <div className={styles.content_game}>
