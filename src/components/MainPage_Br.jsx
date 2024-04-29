@@ -15,9 +15,9 @@ export const MainPage_Br = () => {
 
     return (
         <body className={styles.body}>
-            <div className={styles.content_news_main_page}>
-                <div className={styles.border_news_main_page}></div>
-                <div className={styles.content2_news_main_page}>
+            <div className={styles.content_section_one_main_page}>
+                <div className={styles.border_section_one_main_page}></div>
+                <div className={styles.content2_section_one_main_page}>
                     <h2>Forjando novas realidades</h2>
                     <div>
                         <p>
@@ -28,18 +28,18 @@ export const MainPage_Br = () => {
                             do Storm Wizard Studios, onde a fantasia se torna realidade."
                         </p>
                     </div>
-                    <div>
-                        <img src={img} title="background" alt="Mountains with stormy weather in the background" />
-                    </div>
                 </div>
                 <div>
-                    <img className={styles.imgNews} src={imgNews} title="Storm Wizard Studios - News Image" alt="News Image" />
+                    <img className={styles.section_one_img} src={imgNews} title="Storm Wizard Studios - News Image" alt="News Image" />
                 </div>
             </div>
-            <div className={styles.content_game}>
-                <div className={styles.border_history_main_page}></div>
-                <div className={styles.content2_game}>
-                    <div className={styles.content_game_text_main_page}>
+            <div className={styles.content_section_two_main_page}>
+                <div className={styles.border_section_two_main_page}></div>
+                <div className={styles.content2_section_two_main_page}>
+                    <div>
+                        <img src={img2} className={styles.section_two_img} title="Forja mágica" alt="Forja mágica" />
+                    </div>
+                    <div className={styles.content_section_two_text_main_page}>
                         <h2>Reinos Fantasticos</h2>
                         <p>
                             "Na forja da paixão pelos jogos, moldamos mundos 2D e 3D repletos de aventura,
@@ -51,15 +51,12 @@ export const MainPage_Br = () => {
                             é a recompensa. Conheça as realidades forjadas por nossas magias."
                         </p>
                     </div>
-                    <div>
-                        <img src={img2} className={styles.img2} title="Forja mágica" alt="Forja mágica" />
-                    </div>
                 </div>
             </div>
-            <div className={styles.content_game}>
-                <div className={styles.border_game_main_page}></div>
-                <div className={styles.content2_game}>
-                    <div className={styles.content_game_text_main_page}>
+            <div className={styles.content_section_three_main_page}>
+                <div className={styles.border_section_three_main_page}></div>
+                <div className={styles.content2_section_three_main_page}>
+                    <div className={styles.content_section_three_text_main_page}>
                         <h2>Magus Pocus</h2>
                         <p>
                             Explore um mundo de RPG de ação 2D no estilo plataforma. Torne-se um mago poderoso de uma
@@ -73,7 +70,7 @@ export const MainPage_Br = () => {
                         </button>
                     </div>
                     <div>
-                        <img src={img3} className={styles.img3} title="Magus Pocus Game" alt="Magus Pocus Game" />
+                        <img src={img3} className={styles.section_three_img} title="Magus Pocus Game" alt="Magus Pocus Game" />
                     </div>
                 </div>
             </div>
