@@ -1,6 +1,5 @@
 import styles from "./Body.module.css";
 import imgNews from "../assets/img/image/about-image.webp";
-import img from "../assets/img/image/1.webp";
 import img2 from "../assets/img/image/reinos_fantasticos.webp";
 import img3 from "../assets/img/image/5.webp";
 import fb from "../assets/img/icons/icon face.png";
