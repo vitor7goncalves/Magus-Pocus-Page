@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from "./Topbar.module.css"
-import logo from "../assets/img/logos/StormWizard2.png"
+import logo from "../assets/img/logos/Storm_Wizard_fundo_transparente_raio_dourado.webp"
 import br from "../assets/img/icons/br.jpg"
 import eua from "../assets/img/icons/eua.jpg"
 import { Header_Eng } from './Header_Eng.jsx'

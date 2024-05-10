@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
-import video from "../assets/video/Header_Background.mp4";
-import logoHeader from "../assets/img/logos/Storm Wizard fundo transparente raio dourado.webp";
+import video from "../assets/video/Header_Background2.mp4";
+import logoHeader from "../assets/img/logos/Storm_Wizard_fundo_transparente_raio_dourado.webp";
 
 export const MainHeader_Eng = () => {
     return (

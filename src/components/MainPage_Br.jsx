@@ -39,7 +39,7 @@ export const MainPage_Br = () => {
                         <img src={img2} className={styles.section_two_img} title="Forja mágica" alt="Forja mágica" />
                     </div>
                     <div className={styles.content_section_two_text_main_page}>
-                        <h2>Reinos Fantasticos</h2>
+                        <h2>Reinos Fantásticos</h2>
                         <p>
                             "Na forja da paixão pelos jogos, moldamos mundos 2D e 3D repletos de aventura,
                             ação e magia. Aqui, na Storm Wizard Studios, somos mais do que desenvolvedores -

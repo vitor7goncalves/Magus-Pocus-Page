@@ -21,6 +21,16 @@ body {
   src: url("./assets/font/Tenderness.otf");
 }
 
+@font-face {
+  font-family: 'briemhand';
+  src: url("./assets/font/BriemHand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  src: url("./assets/font/DMSerifDisplay-Regular.ttf");
+}
+
 :root {
   --border-: 70%;
   --line-height: 1.5;
@@ -33,10 +43,11 @@ body {
   --gray-600: #323238;
   --gray-700: #29292e;
   --gray-800: #121214;
-  --gray-900: #000000;
+  --gray-900: #001821;
   --gold-100: rgb(182, 187, 12);
   --gold-200: rgb(126, 127, 4);
   --gold-300: rgb(70, 70, 7);
+  --blue-100: #008cbd;
 }
 
 * {
@@ -44,7 +55,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   max-width: 98.8vw !important;
-  font-family: 'tenderness', sans-serif;
+  font-family: 'briemhand';
   color: var(--white);
   font-style: inherit;
   line-height: var(--line-height);
@@ -65,10 +76,13 @@ h1,
 h2,
 h3 {
   color: var(--gold-100);
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: bold;
+  font-family: "DMSerifDisplay" !important;
   margin: 1% 0%;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
 }
 
 p {

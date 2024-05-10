@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css"
-import img from "../assets/img/logos/Storm Wizard fundo transparente raio dourado.webp"
+import img from "../assets/img/logos/Storm_Wizard_fundo_transparente_raio_dourado.webp"
 
 export const MainFooter_Eng = () => {
 
