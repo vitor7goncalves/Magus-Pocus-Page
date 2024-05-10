@@ -42,6 +42,7 @@
 }
 
 .content h1 {
+    width: 90%;
     font-size: 3.5rem;
     color: var(--gold-100);
     text-shadow: 2px 2px 2px var(--gray-900);
