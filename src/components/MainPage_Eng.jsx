@@ -30,7 +30,7 @@ export const MainPage_Eng = () => {
                     </div>
                 </div>
                 <div>
-                <img className={styles.section_one_img} src={imgNews} title="Storm Wizard Studios - News Image" alt="News Image" />
+                    <img className={styles.section_one_img} src={imgNews} title="Storm Wizard Studios - News Image" alt="News Image" />
                 </div>
             </div>
             <div className={styles.content_section_two_main_page}>
@@ -59,18 +59,14 @@ export const MainPage_Eng = () => {
                     <div className={styles.content_section_three_text_main_page}>
                         <h2>Magus Pocus</h2>
                         <p>
-                            Explore a 2D action RPG world in platformer style. Become a powerful wizard from an
-                            alternate Earth, defeat monsters, explore secret-filled stages, and enhance your magical
-                            abilities. The new DLC will transform the experience, offering an engaging journey with magical
-                            essences vital to unlocking your character's full potential. Get ready for a new era of magic!
-                            Join us on this adventure, download the demo version, and check out the changes.
+                            Explore a 2D world of action RPG and platforming. Step into the role of a powerful mage in an alternate Earth, defeat monsters, uncover stages full of secrets, and enhance your magical abilities. Throughout your journey, you'll discover powerful relics that not only improve your skills but also unlock new spells, while evolving your powers through the use of magical essences. This new game offers an immersive experience where relics and magical essences are key to unlocking your character's full potential. Get ready for a new era of magic! Join us on this adventure, download the alpha demo, and experience the changes for yourself!
                         </p>
                         <button onClick={() => window.location.href = urlGame.maguspocus}>
                             Learn more
                         </button>
                     </div>
                     <div>
-                    <img src={img3} className={styles.section_three_img} title="Magus Pocus Game" alt="Magus Pocus Game" />
+                        <img src={img3} className={styles.section_three_img} title="Magus Pocus Game" alt="Magus Pocus Game" />
                     </div>
                 </div>
             </div>

@@ -58,11 +58,7 @@ export const MainPage_Br = () => {
                     <div className={styles.content_section_three_text_main_page}>
                         <h2>Magus Pocus</h2>
                         <p>
-                            Explore um mundo de RPG de ação 2D no estilo plataforma. Torne-se um mago poderoso de uma
-                            Terra alternativa e derrote monstros, explore estágios cheios de segredos e aprimore seu poder mágico
-                            habilidades. O novo DLC transformará a experiência, oferecendo uma jornada envolvente com magia
-                            essências vitais para desbloquear todo o potencial do seu personagem. Prepare-se para uma nova era de magia!
-                            Junte-se a nós nesta aventura, baixe a versão demo e confira as mudanças.
+                            Explore um mundo 2D de RPG de ação e plataforma. Assuma o papel de um mago poderoso em uma Terra alternativa, derrote monstros, desvende estágios repletos de segredos e aperfeiçoe suas habilidades mágicas. Ao longo da jornada, você encontrará relíquias poderosas que aprimoram suas habilidades e desbloqueiam novas magias, além de evoluir seus poderes utilizando essências mágicas. Este novo jogo oferece uma experiência envolvente, onde relíquias e essências mágicas serão fundamentais para liberar todo o potencial do seu personagem. Prepare-se para uma nova era de magia! Junte-se a nós nesta aventura, baixe a versão alpha demo e descubra as novidades por si mesmo!
                         </p>
                         <button onClick={() => window.location.href = urlGame.maguspocus}>
                             Saiba Mais

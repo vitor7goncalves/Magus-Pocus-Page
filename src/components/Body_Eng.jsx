@@ -17,11 +17,9 @@ export const Body_Eng = () => {
                 <div className={styles.content2_news}>
                     <div>
                         <p>
-                            "I have decided to undertake a significant transformation of Magus Pocus, elevating it from a more simplified 2D platformer to its original 2D RPG format. After over a year since its initial release, I am excited to announce the launch of a comprehensive DLC (Magus Pocus: Arcane Essence). As a solo developer, I initially hesitated to embrace the complexity of an RPG, opting for a simpler approach. However, after reflecting on the game's potential, I have decided to return to the original idea.
-
-                            At this early stage of the project, I am releasing a prototype (demo) to the community. I want players to experience it and share their feedback to shape the essence of Magus Pocus: Arcane Essence. The base game will still be a simpler 2D platformer, and what we are developing will be a DLC with its own pricing. The intention of releasing it as DLC is so that if a player decides to play a casual 2D platformer, they can simply disable the DLC and be good to go.
-
-                            I appreciate in advance everyone who decides to download the demo and contribute their opinions. This process is vital to creating the most engaging and fun game possible. Thank you for your active participation in the evolution of Magus Pocus: Arcane Essence."
+                            "I’m excited to share the development of "Magus Pocus: Arcane Essence," a 2D RPG in the making that promises to blend mystery, magic, and strategic challenges. The game is still in development, but my vision is to create an immersive world filled with engaging narrative.
+                            While the release is still some time away, I want to share an early demo with the community. This will allow you to experience a glimpse of what’s coming and provide valuable feedback, which will be essential in shaping the essence of Magus Pocus: Arcane Essence.
+                            I sincerely appreciate everyone who participates in this process. Together, we can build an unforgettable magical journey!"
                         </p>
                     </div>
                     <div>
@@ -33,9 +31,14 @@ export const Body_Eng = () => {
             <div className={styles.content_game}>
                 <div className={styles.content2_game}>
                     <div className={styles.content_game_text}>
-                        <h2>New DLC</h2>
+                        <h2>About the game</h2>
                         <p>
-                            Embark on a 2D action RPG platformer world. Become a powerful mage from an alternate land, defeat monsters, explore stages full of secrets, and enhance your magical abilities. The new DLC will transform the experience, providing a more immersive journey. Magical essences are vital to unlocking your character's full potential, earned by defeating enemies and exploring hidden corners. Be prepared for a new era of magic! We're still hard at work, bringing more excitement. Join us on this adventure and experience the evolution of our game. Download the demo version and check out the changes.
+                            Explore a 2D world of action RPG and platforming.
+                            Become a powerful mage in an alternate Earth, defeat monsters, explore environments filled with secrets, and refine your magical abilities.
+                            I am working to create an increasingly immersive journey full of new thrills.
+                            Magical essences will be the key to unlocking your character's full potential, obtained by facing enemies and discovering hidden locations.
+                            Get ready for a new era of magic! Though the game is still in development, I invite you to join us on this adventure and experience its evolution.
+                            Download the alpha and see the changes for yourself.
                         </p>
                     </div>
                     <div>
@@ -49,7 +52,7 @@ export const Body_Eng = () => {
                     <div className={styles.content_skill_three_text}>
                         <h2>Skill Tree</h2>
                         <p>
-                            Incorporated a skill tree inspired by RPGs to enhance the character progression in the adventure. Now, players can enhance damage, increase life, speed, and acquire new spells, all using the magical essence collected in the game.
+                            I’m adding a skill tree inspired by RPGs to enhance character progression in the adventure. With this feature, you’ll be able to increase damage, improve health, boost speed, and unlock new spells, all using the magical essence collected throughout the game. This addition will provide deeper customization and strategy as you explore and develop your character in Magus Pocus: Arcane Essence.
                         </p>
                     </div>
                 </div>
@@ -59,9 +62,9 @@ export const Body_Eng = () => {
             <div className={styles.content_enemy}>
                 <img src={img5} />
                 <div className={styles.content_enemy_text}>
-                    <h2>Enhanced Enemies</h2>
+                    <h2>Enemies</h2>
                     <p>
-                        The introduction of new enemies and the overhaul of existing ones are accompanied by enhancements in the artificial intelligence that controls these adversaries. These improvements aim to require greater creativity from the player during battles, emphasizing the importance of the constant evolution of the character. This becomes essential to overcome increasingly evolved enemies throughout the journey.
+                        The enemies at the beginning of the adventure will be relatively simple, but as you progress, you'll encounter increasingly intelligent and challenging foes, each with unique abilities. These encounters will require not only more elaborate strategies but also a constant evolution of your character, creating a natural sense of progression—something fundamental in RPGs. With each battle, you'll feel the impact of your choices and the development of your skills.
                     </p>
                 </div>
             </div>
@@ -70,14 +73,14 @@ export const Body_Eng = () => {
                 <div className={styles.content_video_text}>
                     <h2>Magus Pocus: Arcane Essence</h2>
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/78GoFuk-6p0?si=NmxpHgYC9SomQ6Jz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LD9W2xLTCXU?si=LD9iq0LlnR_cKvgF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <img className={styles.border_img_BG} src={img6} />
             </div>
             <div className={styles.button_buy}>
                 <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
                     <button>Buy Magus Pocus In Steam</button>
                 </a>
-                <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
+                <a href="https://stormwizardstudios.itch.io/maguspocus-arcaneessence">
                     <button>Free Test Magus Pocus: Arcane Essence</button>
                 </a>
             </div>

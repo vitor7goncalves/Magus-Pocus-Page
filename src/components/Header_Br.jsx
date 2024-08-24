@@ -9,7 +9,7 @@ export const Header_Br = () => {
                 <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
                     <button>Compre Magus Pocus Na Steam</button>
                 </a>
-                <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
+                <a href="https://stormwizardstudios.itch.io/maguspocus-arcaneessence">
                     <button>Teste de graça Magus Pocus: Essencia Arcana</button>
                 </a>
             </div>
