@@ -9,7 +9,7 @@ export const Header_Eng = () => {
                 <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
                     <button>Buy Magus Pocus In Steam</button>
                 </a>
-                <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
+                <a href="https://stormwizardstudios.itch.io/maguspocus-arcaneessence">
                     <button>Free Test Magus Pocus: Arcane Essence</button>
                 </a>
             </div>
