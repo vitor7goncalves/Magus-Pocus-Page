@@ -6,9 +6,9 @@ export const Header_Br = () => {
             <video className={styles.video} src={video} muted loop autoPlay/>
             <div className={styles.content}>
                 <h1>Venha Fazer Parte Desta Aventura</h1>
-                <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
+                {/*<a href="https://store.steampowered.com/app/2101760/Magus_Pocus/">
                     <button>Compre Magus Pocus Na Steam</button>
-                </a>
+                </a>*/}
                 <a href="https://stormwizardstudios.itch.io/maguspocus-arcaneessence">
                     <button>Teste de graça Magus Pocus: Essencia Arcana</button>
                 </a>

@@ -28,7 +28,6 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    background-color: rgba(0, 0, 0, .4);
     padding-top: 1rem;
 }
 
@@ -46,13 +45,22 @@
     font-size: 3.5rem;
     color: var(--gold-100);
     text-shadow: 2px 2px 2px var(--gray-900);
-    margin-bottom: 3rem;
+    margin-top: 15rem;
 }
 
 @media screen and (max-width: 950px) {
     .content h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .content h1 {
+        font-size: 1.47rem;
+    }
+    .content button {
+        width: 100%;
     }
 }
 
@@ -65,7 +73,11 @@
         margin-bottom: .5rem;
     }
     .content h1 {
-        font-size: 1.5rem;
+        margin-top: 10rem;
+    }
+
+    .content button {
+        width: 100%;
     }
 }
 
@@ -78,6 +90,10 @@
 @media screen and (max-width: 480px) {
     .header_main_page {
         margin-bottom: 4rem;
+    }
+    .content h1 {
+        margin-top: 7rem;
+        margin-bottom: -.5rem;
     }
 }
 
